@@ -7,9 +7,11 @@ namespace PD_1_1
 		static void Main(string[] args)
 		{
 			string userID = Uzdevums1(); //Uzdevums1 palaišana un vārda un uzvārda "globalizācija"
-			int userAge = Uzdevums2(userID);
+			int userAge = Uzdevums2(userID); //Līdzīgi pirmam uzdevumam "globalizējam" vecumu ar return
 			Uzdevums3();
 			Uzdevums4();
+			Uzdevums5();
+
 		}
 
 		//uzdevums 1 iekš funkcijas
@@ -65,6 +67,21 @@ namespace PD_1_1
 			Console.WriteLine("Lūdzu ievadiet jebkuru skatli: ");
 			double skaitlis = Convert.ToDouble(Console.ReadLine());
 			Console.WriteLine("Mans skaitlis ir({0})", skaitlis);
+		}
+        //uzdevums 5
+		static void Uzdevums5()
+		{
+			string texts1 = "macos programmet", texts2;
+			Console.WriteLine("Ievadi lūdzu: {0}", texts1);
+			texts2 = Console.ReadLine();
+			if(texts1 == texts2)
+			{
+				Console.WriteLine("Vau! Tev sanāca!");
+			}
+			else
+			{
+				Console.WriteLine("Diemžēl kāds no mums sačakarējies meistarībā :(");
+			}
 		}
 	}
 }
